@@ -128,7 +128,8 @@ a{
   margin: 0em 2em 0em 2em;
 }
 
-.design {
+.design img {
+    width: 60%;
 }
 
 .design a {
