@@ -128,9 +128,12 @@ a{
   margin: 0em 2em 0em 2em;
 }
 
+.design {
+    text-align: center;
+}
+
 .design img {
     width: 60%;
-    margin: 0 auto;
 }
 
 .design a {
