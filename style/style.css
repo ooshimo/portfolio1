@@ -139,6 +139,7 @@ a{
 
 .footer-nav{
  width: 50%;
+    margin: 0 auto;
   font-size: 1.5em;
   list-style-type: none;
   display: flex;
