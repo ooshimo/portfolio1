@@ -10,69 +10,95 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=BIZ UDPMincho&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <div id="particles-js"></div>
-<header>
-    <div class="header-container">
+    <div id="splash">
+        <div id="splash-logo">My Portfolio</div>
+        <!--/splash--></div>
+        <div class="splashbg1"></div>
+        <div class="splashbg2"></div>
+        <!---画面遷移用-->
+        <div id="container">
+<div id="particles-js"></div>
+<div id="wrapper">
+<header id="header">
 <nav>
-    <div class="nav-container">
-        <ul>
-            <a herf="#"><li>about</li></a>
-            <a herf="#"><li>design works</li></a>
-        </ul>
-    </div>
+    <ul class="nav-container">
+        <li><a herf="#about">about</a></li>
+        <li></li><a herf="#designworks">design works</a></li>
+    </ul>
 </nav>
-    </div>
 </header>
 <main>
-    <div id="wrapper">
     <div class="main-container">
-        <h1>OOSHIMO TOMOYA</h1>
-            <p class="text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
-                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
-                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
-            </p>
-                <img src="#" alt="#">
-        <h1>ABOUT</h1>
+        <div class="syoukai">
+            <h1>OOSHIMO TOMOYA</h1>
+                <p class="text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                </p>
+                    <img src="images/suizokukan1.jpg" alt="#">
+        </div>
+    <a name="about"><h1>ABOUT</h1></a>
         <div class="about1">
-        <div class="about2">
-        <div class="profile">
-            <img src="#" alt="#">
-            <div class="about3">
-                <h2>大下　友弥</h2>
-                    <p class="text">ooshimo tomoya</p>
+            <div class="about2">
+                <div class="profile">
+                    <img src="images/emoto.JPG" alt="#">
+                        <div class="about3">
+                            <h2>大下　友弥<br><span>ooshimo tomoya</span></h2>
+                                <ul class="text1">
+                                    <li>2002/09/22
+                                    <li>広島コンピュータ専門学校
+                                    <li>情報管理科　WEBデザインコース
+                                 </ul>
+                        </div>
+                </div>
             </div>
-        </div>
-                        <p class="text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
-                            ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
-                            ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
-                            ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
-                            ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
-                        </p>
-        </div>
             <div class="about4">
                 <h2>資格・免許</h2>
-                        <p class="text">色彩士検定3級<br>CGクリエイター検定3級<br>ビジネス技能検定3級<br>WEBデザイン技能検定3級<br>普通自動車第一運転免許(AT限定)</p>
+                    <ul class="text2">
+                        <li>令和3年　10月　普通自動車第一運転免許(AT限定)
+                        <li>令和3年　12月　CG-ARTS主催　CGクリエイター検定ベーシック　合格
+                        <li>令和4年　1月　ビジネス能力検定ジョブパス３級　合格
+                        <li>令和4年　1月　色彩士検定３級　合格
+                        <li>令和4年　3月　３級ウェブデザイン技能士　取得
+                    </ul>
             </div>
         </div>
-        <h1>DESIGN WORKS</h1>
+    <a name="designworks"><h1>DESIGN WORKS</h1></a>
             <div class="design">
-                        <a href="https://ooshimo.github.io/kyotokankou/" alt="京都観光"><h3>京都観光</h3></a>
-                        <a href="https://ooshimo.github.io/TropicalShop1/" alt="熱帯魚ショップurl"><h3>熱帯魚ショップ</h3></a>
-                        <img src="image/work1.jpg" alt="#">
+                <div class="kyotokankou">
+                    <a href="https://ooshimo.github.io/kyotokankou/"><img src="images/kyotokankou.jpg" alt="京都観光url"></a>
+                        <div class="kyotokankou1">
+                            <h3>京都観光</h3>
+                                <p>このWEBサイトは専門学校に入って最初に自分で作ったWEBサイトです。
+                                    京都の観光名所を載せました。ナビゲーション機能を付けたりリンクのある場所には
+                                    hoverで色を変えてクリックできることをわかりやすくしています。
+                                    また、jqueryを使い観光名所の画像が切り替わるようにしてどんな場所なのかわかりやすくしています。
+                                </p>
+                        </div>
+                </div>
+                <div class="TropicalShop">
+                    <a href="https://ooshimo.github.io/TropicalShop1/"> <img src="images/TropicalShop.jpg" alt="熱帯魚ショップurl"></a>
+                        <div class="TropicalShop1">
+                            <h3>Tropical Shop</h3>
+                                <p>このWEBサイトは熱帯魚や飼育に必要なものを販売するネットショップです。
+                                    商品をグリッドで並べ、カーソルが上にくると浮き上がるようにしたり外来種を
+                                    取り扱うので飼育の難易度を色でわかりやすくしています。
+                                </p>
+                        </div>
+                </div>
+                <div class="design1">   
+                    <img src="images/work1.jpg" alt="#">
+                </div>  
             </div>
     </div>
-    </div>
 </main>
-<footer>
-        <ul class="footer-nav">
-            <a herf="#"><li>about</li></a>
-            <a herf="#"><li>design works</li></a>
-        </ul>
-</footer>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-4/js/5-4.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
