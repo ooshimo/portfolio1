@@ -4,12 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>portfolio</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style/normalize.css">
 <link rel="stylesheet" href="style/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=BIZ UDPMincho&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 </head>
 <body>
     <div id="splash">
@@ -19,24 +21,21 @@
         <div class="splashbg2"></div>
         <!---画面遷移用-->
         <div id="container">
-<div id="particles-js"></div>
-<div id="wrapper">
-<header id="header">
-<nav>
-    <ul class="nav-container">
-        <li><a herf="#about">about</a></li>
-        <li></li><a herf="#designworks">design works</a></li>
-    </ul>
-</nav>
+    <div id="particles-js"></div>
+    <div id="wrapper">
+<header class="header">
+    <div class="menu-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+      <div class="menu">
+        <div id="page_link" class="menu__item"><a href="#about">about</a></div>
+        <div id="page_link1" class="menu__item"><a href="#design-works">design works</a></div>
+      </div>
 </header>
 <main>
     <div class="main-container">
         <div class="syoukai">
             <h1>OOSHIMO TOMOYA</h1>
-                <p class="text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
-                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
-                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
-                </p>
                     <img src="images/suizokukan1.jpg" alt="#">
         </div>
     <a name="about"><h1>ABOUT</h1></a>
@@ -65,16 +64,33 @@
                     </ul>
             </div>
         </div>
-    <a name="designworks"><h1>DESIGN WORKS</h1></a>
+    <div class="hobby1">
+        <h2>趣味</h2>
+            <div class="hobby2">
+                <div class="hobby-common1">
+                    <h3>スポーツ観戦</h3>
+                        <p>海外のサッカーの試合をよく見ます。</p>
+                    <h3>スポーツ</h3>
+                        <p>体を動かすのが好きです。</p>
+                </div>
+                <div class="hobby-common2">
+                    <h3>映画鑑賞</h3>
+                        <p>ジブリ映画やアニメ映画などを見ています。</p>
+                    <h3>読書</h3>
+                        <p>小説や漫画などを読んでいます。</p>
+                </div>
+        </div>
+    </div>
+        <a name="design-works"><h1>DESIGN WORKS</h1></a>
             <div class="design">
                 <div class="kyotokankou">
                     <a href="https://ooshimo.github.io/kyotokankou/"><img src="images/kyotokankou.jpg" alt="京都観光url"></a>
                         <div class="kyotokankou1">
                             <h3>京都観光</h3>
-                                <p>このWEBサイトは専門学校に入って最初に自分で作ったWEBサイトです。
-                                    京都の観光名所を載せました。ナビゲーション機能を付けたりリンクのある場所には
-                                    hoverで色を変えてクリックできることをわかりやすくしています。
-                                    また、jqueryを使い観光名所の画像が切り替わるようにしてどんな場所なのかわかりやすくしています。
+                                <p>京都の観光サイトです。<br>
+                                    背景色をエリアのイメージカラーにしました。<br>
+                                    全体を京都の風情が感じられる配色にしました。<br>
+                                    レスポンシブに対応しています。         
                                 </p>
                         </div>
                 </div>
@@ -82,15 +98,13 @@
                     <a href="https://ooshimo.github.io/TropicalShop1/"> <img src="images/TropicalShop.jpg" alt="熱帯魚ショップurl"></a>
                         <div class="TropicalShop1">
                             <h3>Tropical Shop</h3>
-                                <p>このWEBサイトは熱帯魚や飼育に必要なものを販売するネットショップです。
-                                    商品をグリッドで並べ、カーソルが上にくると浮き上がるようにしたり外来種を
-                                    取り扱うので飼育の難易度を色でわかりやすくしています。
+                                <p>熱帯魚のオンラインショップサイトです。<br>
+                                    誰にでもわかりやすく使いやすいデザインを<br>
+                                    心がけました。<br>
+                                    
                                 </p>
                         </div>
                 </div>
-                <div class="design1">   
-                    <img src="images/work1.jpg" alt="#">
-                </div>  
             </div>
     </div>
 </main>
