@@ -1,4 +1,29 @@
+$(function(){
+		$('.menu-btn').on('click', function(){
+		  $('.menu').toggleClass('is-active');
+		});
+	  }());
+	  
+$(function() {
+    $('#nav_toggle').click(function(){ // headerにclass名「open_nav」を追加及び削除
+        $('header').toggleClass('open_nav');
 
+    });
+
+    $('nav a').on('click', function(){
+        if (window.innerWidth <= 768) {
+            $('#nav_toggle').click();
+        }
+    });
+});
+
+$("#page_link").click(function(){
+	$('.menu').toggleClass('is-active');
+});
+$("#page_link1").click(function(){
+	$('.menu').toggleClass('is-active');
+});
+//ここまでnav
 
 particlesJS("particles-js",{
 	"particles":{
