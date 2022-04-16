@@ -92,6 +92,8 @@ cursor: pointer;
     align-items: center;
     justify-content: center;
     background: #555;
+    padding-top: 0em;
+    padding-right: 0em;
   }
 
   .menu a {
@@ -108,20 +110,20 @@ cursor: pointer;
     box-sizing: border-box;
   }
 
-  /*----------------------------
-  * アニメーション部分
-  *----------------------------*/
-
-  /* アニメーション前のメニューの状態 */
-  .menu{
-    transform-origin: top left;
-    transform: rotateZ(-90deg);
-    transition: all .3s ease;
-  }
-  /* アニメーション後のメニューの状態 */
-  .menu.is-active{
-    transform: rotateZ(0deg);
-  }
+/* アニメーション前のメニューの状態 */
+.menu{
+  pointer-events: none;
+  opacity: 0;
+  transform-origin: center;
+  transform: scale(.5);
+  transition: all .3s ease;
+}
+/* アニメーション後のメニューの状態 */
+.menu.is-active{
+  pointer-events: auto;
+  opacity: 1;
+  transform: scale(1.0);
+}
 }
 
 
@@ -275,7 +277,6 @@ body.appear #container{
 }
 
 .main-container {
-    width: 1000px;
     margin: 0 auto;
     text-align: center;
     display: block;
@@ -291,46 +292,41 @@ body.appear #container{
   font-family: 'BIZ UDPMincho', cursive;
 }
 
-.main-container .text1 {
-  max-width: 600px;
-}
-
 .main-container .text2 {
-    max-width: 600px;
     text-align: left;
     display: inline-block;
 }
 
 .syoukai img{
-  width: 800px;
+  width: 70%;
   margin-top: 3em;
 }
 
-.profile {
+.profile1 {
   display: flex;
   justify-content: center;
 }
 
-.profile img {
+.profile1 img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   margin-right: 2em;
 }
 
-.profile {
+.profile1 {
   align-items: center;
 }
 
-.profile p {
-  display: none;
+.profile1 p {
+  display: unset;
 }
 
-.profile h2 br {
+.profile1 h2 br {
   display: block;
 }
 
-.profile h2 span {
+.profile1 h2 span {
   font-size: 0.7em;
   font-weight: 550;
 }
@@ -353,21 +349,11 @@ body.appear #container{
 }
 
 .about1 {
-  align-items: center;
-  margin-bottom: 4em;
-}
-
-.about3 h2 {
-  margin-bottom: -0.1em;
-}
-
-.about3 .text {
-  margin-top: 0em;
-}
-
-.about1 {
-  width: 1200px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+  margin-bottom: 2em;
 }
 
 .about2 {
@@ -379,37 +365,55 @@ body.appear #container{
   display: block;
 }
 
+.about3 h2 {
+  margin-bottom: -0.1em;
+}
+
+.about3 .text {
+  margin-top: 0em;
+}
+
 .about4 {
   display: block;
   margin: 0em 2em 0em 2em;
 }
 
-.hobby1 p {
-  margin-top: 0em;
-  margin-bottom: 1.5em;
-}
-
-.hobby1 h3 {
-  margin-bottom: 0.2em;
-}
-
-.hobby2 {
+.profile2 {
   display: flex;
   justify-content: center;
+  font-family: 'BIZ UDPMincho', cursive;
 }
 
-.hobby-common1 {
-  display: block;
-  margin-right: 2em;
+.hobby1 {
+  text-align: center;
+  margin-right: 8em;
 }
 
-.hobby-common2 {
-  display: block;
-  margin-left: 2em;
+.text3 {
+  line-height: 1.7em;
+  list-style-type: none;
+  display: inline-block;
+  text-align: left;
+  margin-top: 0em;
+  padding: 0em;
 }
+
+.skill1 {
+  text-align: center;
+  margin-left: 8em;
+}
+
+.text4 {
+  line-height: 1.7em;
+  list-style-type: none;
+  display: inline-block;
+  text-align: left;
+  margin-top: 0em;
+  padding: 0em;
+}
+
 
 .design {
-    text-align: center;
     font-family: 'BIZ UDPMincho', cursive;
     line-height: 1.7em;
 }
@@ -419,6 +423,7 @@ body.appear #container{
 }
 
 .design img:hover {
+  opacity: .8;
   transform: scale(1.2,1.2);
   transition-duration: .7s;
   cursor: pointer;
@@ -432,6 +437,7 @@ body.appear #container{
 
 .kyotokankou {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 5em;
   margin-bottom: 5em;
@@ -458,12 +464,14 @@ body.appear #container{
 
 .TropicalShop {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 5em;
   margin-bottom: 5em;
 }
 
 .TropicalShop1 {
+  width: 345px;
   display: block;
   margin-left: 3em;
 }
@@ -482,7 +490,13 @@ body.appear #container{
   margin-right: 3em;
 }
 
-@media screen and (max-width: 768px) {
+/*　1000pxより小さい　*/
+@media screen and (max-width: 1000px) {
+  
+  body {
+    font-family: 'BIZ UDPMincho', cursive;
+  }
+
   .nav-container ul {
     font-size: 0.8em;
     margin: 0em 1em;
@@ -494,12 +508,97 @@ body.appear #container{
   }
 
   .syoukai img{
-    width: 300px;
     margin-top: 1em;
   }
 
-  .main-container {
-    max-width: 350px;
+  .main-container h1 {
+    font-size: 2.2em;
+  }
+
+  .main-container h2 {
+    font-size: 1.2em;
+  }
+
+  .about1 {
+    display: block;
+  }
+
+  .about4 {
+    margin-top: 3em;
+  }
+
+  .hobby1 {
+    margin-right: 2em;
+  }
+
+  .skill1 {
+    margin-left: 2em;
+  }
+
+  .design {
+    display: block;
+    margin-top: em;
+  }
+
+  .design img {
+    width: 40%;
+    margin-right: 0em;
+    margin-top: 3em;
+  }
+
+  .kyotokankou {
+    display: unset;
+  }
+
+  .kyotokankou img {
+    margin-top: 2em;
+  }
+
+  .TropicalShop {
+    display: unset;
+  }
+
+  .kyotokankou1 {
+    margin: 0em;
+  }
+
+  .TropicalShop1 {
+    margin: 0em;
+    width: unset;
+  }
+
+  .kyotokankou1 p {
+    display: inline-block;
+    font-size: 1.03em;
+  }
+
+  .TropicalShop1 p {
+    display: inline-block;
+    font-size: 1.03em;
+    margin-bottom: 5em;
+  }
+}
+
+/*　768pxより小さい　*/
+
+@media screen and (max-width: 768px) {
+  #splash-logo {
+    font-size: 2em;
+  }
+
+  .nav-container ul {
+    font-size: 0.8em;
+    margin: 0em 1em;
+    padding: 0.5em 0em;
+  }
+
+  .syoukai h1 {
+    margin-top: 0em;
+  }
+
+  .syoukai img{
+    width: 70%;
+    margin-top: 1em;
   }
 
   .main-container h1 {
@@ -509,20 +608,58 @@ body.appear #container{
     font-size: 0.8em;
   }
 
-  .main-container .text {
-    max-width: 350px;
+  .profile1 {
+    display: unset;
   }
 
-  .about1 {
-    max-width: 350px;
+  .text1 li {
+    font-size: 0.6em;
+    line-height: 2em;
+  }
+
+  .text2 {
+    padding: 0em;
+  }
+
+  .text2 li {
+    font-size: 0.6em;
+    line-height: 2em;
+  }
+
+  .text3 li {
+    font-size: 0.6em;
+    line-height: 2em;
+  }
+
+  .text4 li {
+    font-size: 0.6em;
+    line-height: 2em;
   }
 
   .about1 {
     display: block;
+    margin-top: 2em;
   }
 
   .about1 h2 {
-    font-size: 1.1em;
+    font-size: 0.9em;
+  }
+
+  .about2 img {
+    margin-right: 0em;
+    width: 100px;
+    height: 100px;
+  }
+  .hobby1 {
+    margin-right: 1em;
+  }
+  
+  .skill1 {
+    margin-left: 1em;
+  }
+
+  .profile2 h2 {
+    font-size: 0.9em;
   }
 
   .design {
@@ -530,12 +667,20 @@ body.appear #container{
   }
 
   .design img {
-    width: 200px;
+    width: 70%;
     margin-right: 0em;
+  }
+
+  .kyotokankou img {
+    margin-top: 1em;
   }
 
   .kyotokankou {
     display: unset;
+  }
+
+  .TropicalShop img {
+    margin-top: 2em;
   }
 
   .TropicalShop {
