@@ -613,7 +613,7 @@ body.appear #container{
   }
 
   .text1 li {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 2em;
   }
 
@@ -622,17 +622,17 @@ body.appear #container{
   }
 
   .text2 li {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 2em;
   }
 
   .text3 li {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 2em;
   }
 
   .text4 li {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 2em;
   }
 
