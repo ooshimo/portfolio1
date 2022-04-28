@@ -484,6 +484,7 @@ body.appear #container{
 .TropicalShop1 p {
   text-align: left;
   font-size: 1.04em;
+  padding-left: 1em;
 }
 
 .TropicalShop img {
